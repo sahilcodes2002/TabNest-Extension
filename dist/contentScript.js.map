@@ -1,0 +1,1 @@
+{"version":3,"file":"contentScript.js","mappings":";;;;AAAA;AACA;AACA","sources":["webpack://tab-saver-extension/./src/contentScript/contentScript.js"],"sourcesContent":["window.onload = () =>{\r\n    console.log(\"I am from content script\");\r\n}\r\n"],"names":[],"sourceRoot":""}
