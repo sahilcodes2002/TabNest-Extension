@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "Tab Saver",
+    "options_page": "options.html",
+    "version": "1.0.0",
+    "icons":{
+      "16": "icon16.png",
+      "48": "icon16.png",
+      "128": "icon16.png"
+    },
+    "action": {
+      "default_title": "Click Me",
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "tabs",
+      "bookmarks",
+      "unlimitedStorage",
+      "storage",
+      "identity"
+    ],
+    "background": {
+    "service_worker": "background.js"
+     },
+     "content_scripts": [
+      {
+        "matches": ["https://*.google.com/*"],
+        "js":["contentScript.js"]
+      }
+     ],
+     "host_permissions": [
+    "http://*/*", "https://*/*"
+     ]
+  }
+  
